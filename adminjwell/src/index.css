@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+US+Trad:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body{
+  background: #fff;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.linhov:hover{
+  color: #455e34;
+}
+
+.cursiv{
+  font-family: "Playwrite US Trad", cursive;
+}
+
+.parent{
+  width: 100vw;
+    /* overflow-x: hidden; */
+}
+
+
+
+.bg-light{
+  background-color: #efefef;
+}
+  
+nav{
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.4);
+  background: #efefef;
+  /* width: 100%; */
+}
+
+.poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+.luxuria{
+  font-family: "Playfair Display", serif;;
+}
+
+.ac-bg{
+  background: #455e34;
+}
+.ac-color{
+  color: #5a7a45;
+}
+.bg-dark{
+  background: #2e461f;
+}
+
+.home-bg{
+  background-size: 100% 100%;
+}
+.bor-b{
+  border-bottom: 1px solid #58853a;
+}
+
+/* background none */
+
+/* .no-bg{
+  filter: drop-shadow(1px 1px 2px 3px rgba(0,0,0,0.4));
+  mix-blend-mode: multiply;
+  /* box-shadow: 1px 1px 2px 3px rgba(0,0,0,0.4); */
+
+.hov:hover ~ .feature{
+background-color: #58853a;
+width: 12rem;
+height: 7rem;
+display: block;
+transition: 0.5s;
+}
+
+.feature ul{
+  height: 100%;
+  width: 100%;
+}
+
+.feature ul li{
+  height: 33.33%;
+  background: #efefef;
+  transition: 0.5s;
+}
+
+.feature ul li:hover{
+  background: #5a7a45;
+}
+
+.hovLink:hover{
+  font-weight: bold;
+}
+
+.mar{
+  padding-top: 100px;
+}
+
+.heropattern{
+  background-image: url(./img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.rex{
+  background-image: url(./img/hero.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* object-fit: cover; */
+}
+
+/* .hero::before{
+content: '';
+width: 100%;
+height: 100%;
+background: linear-gradient(#58853a 70% transparent);
+} */
+
+
+/* .hero{
+   background: url(./img/hero.jpg); 
+  background-size: cover;
+  background-position: center;
+} */
+
+@media (max-width:768px) {
+  .hero{
+      background: url(./img/hero.jpg);
+      background-size: cover;
+      background-position: center;
+  }
+  .img{
+    display: none;
+  }
+
+  .hero::before{
+    content: '';
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(75deg, rgba(36, 39, 34, 0.521) 44%, rgba(215,215,223,0) 98%);
+  }
+}
+
+
+
+
+
+
+.font-heading{
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+margin-left: 35px;
+  z-index: 11;
+}
+
+.exploreBtn{
+  width: 110px; 
+  background: #5a7a45;
+  z-index: 12;
+  box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.4);
+}
+
+
+.slideImg{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.why{
+  margin-bottom: -70px;
+}
+
+@media (max-width:800px) {
+  .font-heading{
+    font-size: 4rem;
+  }
+  .exploreBtn{
+   top: 80%;
+  }
+}
+
+
+@media (max-width:690px) {
+  .font-heading{
+    font-size: 3rem;
+    top: 40%;
+  }
+  .exploreBtn{
+   top: 70%;
+  }
+}
+
+@media (max-width:650px) {
+  .font-heading{
+    font-size: 2rem;
+  }
+  .exploreBtn{
+   top: 60%;
+  }
+}
+
+@media (max-width:400px) {
+  .font-heading{
+    font-size: 23px;
+    top: 40%;
+  }
+  .exploreBtn{
+   top: 55%;
+  }
+}
+
+@media (max-width:315px) {
+  body{
+    width: 315px;
+  }
+}
+
+@media (max-width:310px ) {
+  body{
+    width: 100%;
+
+  }
+}
+
+
+@media (max-width:280px) {
+  body{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1350px) {
+  
+  .fontContent{
+    font-size: 90px;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  
+  .fontContent{
+    font-size: 102px;
+  }
+}
+
+
+/* Custom styles can be added here if needed */
+
+.runner{
+  position: relative;
+  animation: run 20s none 4s infinite linear;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@media (max-width:786px) {
+  .runner{
+  animation: runMd 20s none 4s infinite linear;
+  }
+}
+
+@media (max-width:636px) {
+  .runner{
+  animation: runSm 20s none 4s infinite linear;
+  }
+}
+
+@media (max-width:524px) {
+  .runner{
+  animation: runXs 20s none 4s infinite linear;
+  }
+}
+
+@media (max-width:454px) {
+  .runner{
+  animation: runXxs 20s none 4s infinite linear;
+  }
+}
+
+@media (max-width:378px) {
+  .runner{
+  animation: runExs 20s none 4s infinite linear;
+  }
+}
+
+@keyframes runExs {
+  0%{
+    left: 0%;
+  }100%{
+    left: -740%;
+  }
+}
+
+
+@keyframes runXxs {
+  0%{
+    left: 0%;
+  }100%{
+    left: -720%;
+  }
+}
+
+
+@keyframes runXs {
+  0%{
+    left: 0%;
+  }100%{
+    left: -710%;
+  }
+}
+
+
+@keyframes runSm {
+  0%{
+    left: 0%;
+  }100%{
+    left: -701%;
+  }
+}
+
+@keyframes run {
+  0%{
+    left: 0%;
+  }100%{
+    left: -400%;
+  }
+}
+
+@keyframes runMd {
+  0%{
+    left: 0%;
+  }100%{
+    left: -586%;
+  }
+}
+
+.download{
+  display: none;
+  transition: 0.5s;
+}
+
+
+.imagcont:hover .download{
+  display: block;
+}
+
+.historyContainer:hover .historyContent{
+  bottom: -25%;
+}
+
+.historyContent{
+  background: linear-gradient(transparent, rgb(110, 109, 109));
+  color: white;
+  transition: 0.5s;
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+}
